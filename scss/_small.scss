@@ -1,0 +1,74 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: #2f3c59;
+}
+
+/*----------- HEADER --------------*/
+.headerWrapper {
+  background-color: white;
+}
+header {
+    padding: .5rem 2%;
+    background-color: white;
+    max-width: 1200px;
+}
+header h1 {
+  margin: 0;
+  color: #2f3c59;
+}
+.logo {
+  float: left;
+  margin: 0 2% 0 0;
+}
+#headerTel {
+  float: right;
+}
+
+/*----------- NAVIGATION --------------*/
+.fa-search {
+  background-color: #2f3c59;
+  color: white;
+  padding: 4px;
+}
+.searchBar {
+  float: right;
+  padding-top: 10px;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+
+/*----------- FOOTER --------------*/
+.footerWrapper {
+    background-color: #2f3c59;
+}
+footer {
+    background-color: #2f3c59;
+    padding: .5rem 2%;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
