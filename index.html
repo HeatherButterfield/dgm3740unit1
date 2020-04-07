@@ -41,9 +41,56 @@
 
   <div class="mainWrapper">
     <main>
+      <div class="slider">
+        <div>
+          <picture>
+            <source src="./images/slider1_lg.jpg" media="(min-width: 28.12rem)">
+            <source src="./images/slider1_sm.jpg" media="(max-width: 28.12rem)">
+            <img src="./images/slider1_lg.jpg" alt="slider">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source src="./images/slider2_lg.jpg" media="(min-width: 28.12rem)">
+            <source src="./images/slider2_sm.jpg" media="(max-width: 28.12rem)">
+            <img src="./images/slider2_lg.jpg" alt="slider">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source src="./images/slider3_lg.jpg" media="(min-width: 28.12rem)">
+            <source src="./images/slider3_sm.jpg" media="(max-width: 28.12rem)">
+            <img src="./images/slider3_lg.jpg" alt="slider">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source src="./images/slider4_lg.jpg" media="(min-width: 28.12rem)">
+            <source src="./images/slider4_sm.jpg" media="(max-width: 28.12rem)">
+            <img src="./images/slider4_lg.jpg" alt="slider">
+          </picture>
+        </div>
+      </div>
 
-
-
+      <h3>Recent Blog Posts</h3>
+      <div class="blog">
+        <a class="blogPost post1" href="#">
+          <h4 class="top">Relax</h4>
+          <h4 class="bottom">Dec 12, 2019</h4>
+        </a>
+        <a class="blogPost post2" href="#">
+          <h4 class="top">Explore</h4>
+          <h4 class="bottom">Jan 12, 2020</h4>
+        </a>
+        <a class="blogPost post3" href="#">
+          <h4 class="top">Remember</h4>
+          <h4 class="bottom">Feb 12, 2020</h4>
+        </a>
+        <a class="blogPost post4" href="#">
+          <h4 class="top">Enjoy</h4>
+          <h4 class="bottom">Mar 12, 2020</h4>
+        </a>
+      </div>
 
 
     </main>
@@ -51,10 +98,51 @@
 
   <div class="footerWrapper">
     <footer>
-        &copy; Heather Butterfield
+        <div class="footerSection">
+          <h3>Contact Us</h3>
+          <a href="https://www.google.com/maps/place/Classic+Skating+%26+Fun+Center/@40.2931898,-111.697047,17z/data=!3m1!4b1!4m5!3m4!1s0x874d9ac6daee9bbb:0xcd106807b51c2a60!8m2!3d40.2931898!4d-111.6948583">250 State St, Orem, UT 84058</a>
+          <h3>Phone</h3>
+          <a id="headerTel" href="tel:123-456-7890">123-456-7890</a>
+          <h3>Hours of Operation</h3>
+          <p>Monday-Friday  9am-5pm</p>
+        </div>
+        <div class="footerSection">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter to stay up to date with our amazing deals</p>
+          <form>
+            <input type="email" name="email" value="Email" required>
+            <button type="submit" name="submit">Submit</button>
+          </form>
+        </div>
+        <div class="footerSection">
+          <h3>Why Cabot Cruises?</h3>
+          <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacations including discounted cruises.</p>
+        </div>
     </footer>
+    <div class="social">
+      <div class="socialSection">
+        <i class="fab fa-facebook-f fa-3x"></i>
+        <i class="fab fa-instagram fa-3x"></i>
+        <i class="fab fa-twitter fa-3x"></i>
+        <i class="fab fa-linkedin-in fa-3x"></i>
+        <i class="fab fa-pinterest-p fa-3x"></i>
+      </div>
+      <p class="copy">&copy; Heather Butterfield 2020 <a href="https://heatherbutterfield.com/portfolio/">Portfolio</a></p>
+    </div>
   </div>
 
 <script type="text/javascript" src="./js/toggleMenu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      autoplay: true
+    });
+  });
+</script>
 </body>
 </html>

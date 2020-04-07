@@ -16,7 +16,53 @@
 
 
 /*----------- MAIN --------------*/
-
+.blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.post1 {
+  background-image: url("../images/blog1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.post2 {
+  background-image: url("../images/blog2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.post3 {
+  background-image: url("../images/blog3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.post4 {
+  background-image: url("../images/blog4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.blogPost {
+  opacity: 75%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.blogPost:hover {
+  opacity: 100%;
+}
+.top {
+  background-color: rgba(103,195,168,0.7);
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+}
+.bottom {
+  background-color: rgba(103,195,168,0.7);
+  margin: 145px 0 0 0;
+  text-align: center;
+  padding: 5px;
+}
 
 
 /*----------- FOOTER --------------*/
