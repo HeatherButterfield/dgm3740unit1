@@ -5,6 +5,9 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+$menuColor: #67c3a8;
+$menuTextColor: white;
+
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
@@ -44,6 +47,9 @@ header h1 {
 .searchBar {
   float: right;
   padding-top: 10px;
+}
+nav {
+  z-index: 100;
 }
 
 /*----------- MAIN --------------*/
@@ -110,6 +116,39 @@ footer {
     color: white;
     text-align: center;
 }
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+  flex-wrap: wrap;
+}
+footer a {
+  color: white;
+}
+.social {
+  padding-top: 20px;
+  background-color: white;
+}
+.copy {
+  text-align: center;
+}
+.socialSection {
+  display: flex;
+  justify-content: space-around;
+}
+.socialSection i {
+  color: $menuColor;
+}
+.socialSection i:hover {
+  color: #2f3c59;
+}
+
 
 
 

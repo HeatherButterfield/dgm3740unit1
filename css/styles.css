@@ -353,6 +353,9 @@ header h1 {
   float: right;
   padding-top: 10px; }
 
+nav {
+  z-index: 100; }
+
 /*----------- MAIN --------------*/
 main {
   padding: 0 2%;
@@ -414,6 +417,38 @@ footer {
   padding: .5rem 2%;
   color: white;
   text-align: center; }
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around; }
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+  flex-wrap: wrap; }
+
+footer a {
+  color: white; }
+
+.social {
+  padding-top: 20px;
+  background-color: white; }
+
+.copy {
+  text-align: center; }
+
+.socialSection {
+  display: flex;
+  justify-content: space-around; }
+
+.socialSection i {
+  color: #67c3a8; }
+
+.socialSection i:hover {
+  color: #2f3c59; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -735,6 +770,9 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
+  nav {
+    z-index: 100; }
+
   /*----------- MAIN --------------*/
   .blog {
     display: flex;
@@ -783,7 +821,38 @@ footer {
     text-align: center;
     padding: 5px; }
 
-  /*----------- FOOTER --------------*/ }
+  /*----------- FOOTER --------------*/
+  footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; }
+
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 300px; }
+
+  footer a {
+    color: white; }
+
+  .social {
+    padding-top: 20px;
+    background-color: white; }
+
+  .copy {
+    text-align: center; }
+
+  .socialSection {
+    display: flex;
+    justify-content: space-around; }
+
+  .socialSection i {
+    color: #67c3a8; }
+
+  .socialSection i:hover {
+    color: #2f3c59; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
